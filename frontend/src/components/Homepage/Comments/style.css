@@ -1,0 +1,108 @@
+#comments-div {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 254, 254, 0.889);
+  width: 100%;
+  margin-top: 5px;
+}
+#inner-comments-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2px;
+  overflow-wrap: anywhere;
+}
+#comments-div img {
+  max-width: 40px;
+}
+
+#inner-comments-div textarea {
+  resize: none;
+  flex: 5 ;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 2px;
+  padding-left: 10px;
+  padding-top: 5px;
+  border: 0.5px solid rgb(112, 105, 105);
+  border-right: 0.5px solid black;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#inner-comments-div textarea:focus {
+  outline: 0.5px solid var(--second-color);
+  border: 0;
+  border-right: 0.5px solid var(--second-color);
+  
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+#add-comment-btn {
+  resize: none;
+  flex: 1;
+  margin-top: 5px;
+  background-color: var(--forth-color);
+  margin-bottom: 5px;
+  
+  border: 0.5px solid rgb(112, 105, 105);
+  border-left: 0;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+}
+
+#add-comment-btn:hover {
+  background-color: var(--second-color);
+  color: var(--first-color);
+}
+
+#comment-card {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.212);
+}
+#comments-viewer {
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 0px black;
+}
+#comment-card-p {
+  background-color: rgba(108, 101, 101, 0.264);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  width: 60%;
+}
+#comment-card-img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+#comment-card-img img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+#comment-menu-button{
+  position: absolute;
+  right: 16px;
+  
+  background-color: transparent;
+  cursor: pointer;
+}
+#comment-menu-button img{
+  max-width: 20px;
+  background-color: transparent;
+  
+}
+#comments-viewer button{
+  background-color: transparent;
+  border: 0;
+  padding: var(--button-padding);
+  font-weight: bold;
+  text-align:center;
+  
+  cursor: pointer;
+}

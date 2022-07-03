@@ -1,0 +1,103 @@
+#post-card {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  max-width: 700px;
+  margin: 5px;
+  padding: 10px;
+  background-color: var(--first-color);
+  min-height: 20vh;
+  border-radius: var(--input-padding);
+  box-shadow: 0px 0px 2px 0px black;
+  position: relative;
+}
+#post-content {
+  margin-top: 10px;
+  padding: 5px;
+  height: fit-content;
+  overflow-wrap: anywhere;
+}
+#post-content img{
+  width: 100%;
+  height: 500px;
+
+}
+#post-reactions-buttons {
+  display: flex;
+  height: 30px;
+}
+#post-reactions-buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  bottom: 2%;
+  border: 0;
+  margin: 1px;
+  border-top: 0.5px solid rgba(131, 125, 125, 0.518);
+  background-color: var(--first-color);
+}
+#post-reactions-buttons button:hover {
+  background-color: rgb(207, 205, 205);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#post-picture-div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+}
+#post-picture-div div {
+  max-width: 70px;
+  max-height: 70px;
+  border-radius: 50%;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.368);
+}
+#post-menu-button {
+  position: absolute;
+  top: 10px;
+  right: 1em;
+  cursor: pointer;
+}
+
+#post-menu-button img {
+  max-width: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.postPicture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+@media all  and (max-width:550px) {
+  #post-card {
+    width: 100vw;
+    font-size: 0.8em;
+  }
+  #post-creator-div {
+    width: 100vw;
+    font-size: 0.8em;
+  }
+  #post-creator-first-div button {
+   font-size: 0.8em;
+  }
+
+  #new-post-reactions-buttons button{
+    font-size: 0.8em;
+  }
+  #inner-show-post-area {
+    width: 90%;
+    max-width: 500px;
+    min-height: 400px;
+   
+  }
+}

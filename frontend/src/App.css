@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --first-color: white;
+    --second-color: rgb(28, 89, 210);
+    --third-color:black;
+    --forth-color: #F0F2F5;
+    --input-br-color: #E8F0FE;
+    --input-padding:8px;
+    --border-radius: 5px;
+    --button-padding:5px;
+  }
+
+html {
+    background-color: var(--forth-color);
+}
+
+#Alert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #e8f0fe63;
+    width: 100vw;
+    height: 100vh;
+    z-index: 30;
+ 
+}
+#Alert div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 40%;
+    height: 100px; 
+    border-radius: 20px;
+}

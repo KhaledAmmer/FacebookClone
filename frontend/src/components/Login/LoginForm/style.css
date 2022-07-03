@@ -1,0 +1,71 @@
+#login-form-email-password-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    padding: var(--input-padding);
+    border: 0.2px solid rgba(0, 0, 0, 0.333);
+    border-radius:var(--border-radius);
+    background-color: var(--first-color);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.579);
+    
+   
+  }
+
+  .input1{
+    width: 100%;
+    padding: var(--input-padding);
+    border-radius: var(--border-radius);
+    border: 0.1px solid rgba(0, 0, 0, 0.425);
+    background-color: var(--input-br-color);
+  }
+ 
+  .input1:focus{
+   outline:0.5px solid var(--second-color);
+    
+  }
+ 
+  #login-form-email-password-div li{
+  text-align: start;
+}
+
+  #login-button{
+    width: 100%;
+    padding: var(--input-padding);
+    border: 0.2px solid rgba(0, 0, 0, 0.333);
+    border-radius:var(--border-radius);
+    background-color: var(--second-color);
+    color: var(--first-color);
+    cursor: pointer;
+    
+  }
+
+  #login-button:hover{
+    opacity: 0.9; 
+  }
+
+  #create-new-account-button{
+    width: 100%;
+  }
+
+
+  #create-new-account-button button{
+    width: 50%;
+    padding: var(--input-padding);
+    border: 0.2px solid rgba(0, 0, 0, 0.333);
+    border-radius:var(--border-radius);
+    background-color: #36A420;
+    color: var(--first-color);
+    cursor: pointer;
+  }
+  #create-new-account-button button:hover{
+    opacity: 0.9;
+  }
+  
+  @media all  and (max-width:500px) {
+    
+    #login-form-email-password-div {
+      width: 90vw;
+      
+    }
+    }

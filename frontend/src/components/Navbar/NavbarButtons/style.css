@@ -1,0 +1,52 @@
+#navbar-buttons-div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+#navbar-buttons-div button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 0;
+  background-color: rgba(141, 138, 134, 0.234);
+  border-radius: 50%;
+  cursor: pointer;
+}
+#nav-bar-first-div {
+  display: flex;
+  align-items: center;
+
+}
+#navbar-buttons-div img {
+  display: flex;
+  height: 100%;
+  max-height: 20px;
+}
+
+#navbar-menu-div{
+  position: absolute;
+  font-size: 12px;
+  top: 44px;
+  right: 8px;
+  height: 40px;
+  width: 80px;
+  border: 0;
+  background-color: rgba(141, 138, 134, 0.234);
+ 
+  
+  
+}
+#navbar-menu-div button{
+  height: 40px;
+  width: 80px;
+  background-color: rgb(66, 95, 143);
+  color: white;
+  border-radius: 0;
+  
+}
+#navbar-menu-div button:hover{
+  background-color: rgb(177, 191, 213);
+  color: black;
+}

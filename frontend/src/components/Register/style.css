@@ -1,0 +1,97 @@
+#signup-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#signup-form-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 50%;
+  max-width: 500px;
+  min-height: 400px;
+  padding: 10px;
+  border: 0px solid black;
+  border-radius: var(--border-radius);
+  background-color: var(--first-color);
+  box-shadow: 0px 0px 2px black;
+  max-width: 500px;
+}
+
+#register-username-div {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+#register-username-div div {
+  flex: 1;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: var(--input-padding);
+  border-radius: var(--border-radius);
+  border: 0.1px solid rgba(0, 0, 0, 0.425);
+}
+
+#signup--exit-button {
+  position: relative;
+  width: 100%;
+}
+#signup--exit-button button {
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  padding: var(--input-padding);
+  border: 0;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: transparent;
+  color: red;
+  cursor: pointer;
+}
+
+#signup-button-div button {
+  width: 100%;
+  padding: var(--input-padding);
+  border-radius: var(--border-radius);
+  border: 0;
+  font-weight: bold;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+#signup-button-div button:hover {
+  opacity: 0.9;
+}
+
+#signup-button-div {
+  width: 100%;
+  text-align: center;
+}
+#signup-form h1 {
+  text-align: start;
+  color: var(--second-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.667);
+  font-size: 200%;
+}
+@media all and (max-width: 500px) {
+  #signup-form-inner {
+    width: 90%;
+  }
+  #signup-form h1 {
+    text-align: start;
+    color: var(--second-color);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.667);
+    font-size: 1.5em;
+  }
+}

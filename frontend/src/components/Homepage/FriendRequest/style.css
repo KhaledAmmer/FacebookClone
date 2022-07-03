@@ -1,0 +1,27 @@
+.request-img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.request-img-div div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 5px;
+}
+.request-img-div img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.request-img-div small {
+  flex: 1;
+  text-align: center;
+  font-size: 1.01em;
+  font-weight: bold;
+}
